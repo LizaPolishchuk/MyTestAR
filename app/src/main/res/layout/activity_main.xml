@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".presentation.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Recognize your own AR images"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/watch_animation"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="ar_animation.json"
+        app:lottie_loop="true" />
+
+    <Button
+        android:id="@+id/btnOpenAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="Open AR"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnOpenLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="Open markers library"
+        android:textColor="@android:color/white" />
+</LinearLayout>
